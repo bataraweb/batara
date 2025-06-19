@@ -1,0 +1,78 @@
+
+<html$if(lang)$ lang="$lang$"$endif$$if(dir)$ dir="$dir$"$endif$>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+$for(author-meta)$
+  <meta name="author" content="$author-meta$">
+$endfor$
+$if(date-meta)$
+  <meta name="dcterms.date" content="$date-meta$">
+$endif$
+$if(keywords)$
+  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">
+$endif$
+  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+  <style type="text/css">code{white-space: pre;}</style>
+$if(quotes)$
+  <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
+$endif$
+$if(highlighting-css)$
+  <style type="text/css">
+$highlighting-css$
+  </style>
+$endif$
+$for(css)$
+  <!-- <link rel="stylesheet" href="/$css$"> -->
+$endfor$
+    <link rel="stylesheet" href="/normalize.css">
+     <link rel="stylesheet" href="https://unpkg.com/mvp.css"> 
+
+</head>
+<body>
+$for(include-before)$
+$include-before$
+$endfor$
+<main>
+<header>
+<h1>A mind for language</h1>
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/about.html">About</a></li>
+</ul>
+</nav>
+
+</header>
+$if(title)$
+<section>
+$if(tagline)$
+<h2>$title$</h2> <p style="margin:0 auto;font-size:1em;margin-top:-1.5em;max-width:fit-content;">$tagline$</p>
+$else$
+<h2>$title$</h2>
+$endif$
+$if(subtitle)$
+<h3>$subtitle$</h3>
+$endif$
+$if(date)$
+<h3 class="date">$date$</h3>
+$endif$
+</section>
+$endif$
+$if(toc)$
+<nav id="$idprefix$TOC">
+$toc$
+</nav>
+$endif$
+<section>
+$body$
+</section>
+<footer>
+</footer>
+</main>
+$for(include-after)$
+$include-after$
+$endfor$
+</body>
+</html>

@@ -1,0 +1,100 @@
+
+<html$if(lang)$ lang="$lang$"$endif$$if(dir)$ dir="$dir$"$endif$>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+$for(author-meta)$
+  <meta name="author" content="$author-meta$">
+$endfor$
+$if(date-meta)$
+  <meta name="dcterms.date" content="$date-meta$">
+$endif$
+$if(keywords)$
+  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">
+$endif$
+  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+  <style type="text/css">code{white-space: pre;}</style>
+$if(quotes)$
+  <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
+$endif$
+$if(highlighting-css)$
+  <style type="text/css">
+$highlighting-css$
+  </style>
+$endif$
+$for(css)$
+  <!-- <link rel="stylesheet" href="/$css$"> -->
+$endfor$
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css"> 
+    <link rel="stylesheet" href="css/custom.css"> 
+    <style>
+    .index-cons {
+      background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+      color: white; /* White text */
+      padding: 30px;
+      margin: 20px 0;
+      border-radius: 8px; /* Optional: adds rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /*
+    }
+    </style>
+</head>
+<body>
+$for(include-before)$
+$include-before$
+$endfor$
+<main>
+<header>
+<h1>Yayasan Bahasa Nusantara Berkarya</h1>
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/about.html">About</a></li>
+</ul>
+</nav>
+
+</header>
+$if(title)$
+<section>
+$if(tagline)$
+<h2>$title$</h2> <p style="margin:0 auto;font-size:1em;margin-top:-1.5em;max-width:fit-content;">$tagline$</p>
+$else$
+<h2>$title$</h2>
+$endif$
+$if(subtitle)$
+<h3>$subtitle$</h3>
+$endif$
+$if(date)$
+<h3 class="date">$date$</h3>
+$endif$
+</section>
+$endif$
+$if(toc)$
+<nav id="$idprefix$TOC">
+$toc$
+</nav>
+$endif$
+<section class="index-cons">
+$body$
+</section>
+$if(blog)$
+<section>
+<h2>Blog / Notes</h2>
+<ul>
+$blog$
+</ul>
+</section>
+$endif$
+<footer>
+</footer>
+</main>
+$for(include-after)$
+$include-after$
+$endfor$
+</body>
+</html>
