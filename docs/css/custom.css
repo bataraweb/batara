@@ -21,6 +21,17 @@ body {
 }
 
 
+.index-cons section {
+  flex-direction: column;
+}
+
+
+section {
+  flex-direction: column;
+  margin:auto;
+}
+
+h1 {text-align:center;}
 
 .lato-thin {
   font-family: "Lato", sans-serif;

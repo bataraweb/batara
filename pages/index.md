@@ -30,6 +30,7 @@
 - Melakukan update & inovasi software dalam penelitian bahasa
 - Melakukan penguatan bahasa yang termarjinal bekerja sama dengan masyarakat bahasa, 
 - Pengembangan masyarakat secara holistik berbasis bahasa.
+
 </section>
 
 
@@ -37,7 +38,6 @@
 
 
 <section>
-
 # Struktur yayasan
 
 - Pembina : Herly Sitorus
