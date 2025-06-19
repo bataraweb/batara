@@ -1,6 +1,7 @@
 
 
 <section style="margin-top: 2em;">
+
 # Tentang Kami
 
 **Visi Yayasan**: Terwujudnya masyarakat Indonesia yang sejahtera, yang bangga dan peduli terhadap kelestarian bahasa dan warisan budaya leluhur
@@ -10,9 +11,11 @@
 **Bidang**: Pendidikan dan Kebudayaan.
 
 **Wilayah kerja**: seluruh Nusantara
+
 </section>
 
 <section>
+
 # Kegiatan
 
 - Penelitian linguistik dan sosiolinguistik 
@@ -34,6 +37,7 @@
 
 
 <section>
+
 # Struktur yayasan
 
 - Pembina : Herly Sitorus
@@ -41,4 +45,5 @@
 - Sekretaris : Tonggo Manurung
 - Bendahara : Tabita Sitinjak
 - Anggota : Juanto Haloho
+
 </section>
